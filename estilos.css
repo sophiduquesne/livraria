@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +8,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #a7afff;
 }
 
 header {
@@ -16,13 +19,21 @@ header {
     padding: 20px;
 }
 
+header li:hover {
+    background-color: #8592de;
+    border-radius: 5px;
+    border-width: 3px;
+    transition: 0.5s;
+    padding: 4px;
+}
+
 nav ul{
     list-style: none;
 }
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav a {
@@ -31,6 +42,7 @@ nav a {
     color: #fff;
 }
 
+
 main{
     padding: 20px;
     overflow: hidden;
@@ -38,10 +50,10 @@ main{
 
 .card{
     width: calc(33.33% - 20px);
-    height: 500px;
+    height: 450px;
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #cfd3fb;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     float: left;
@@ -52,13 +64,33 @@ main{
     height: 300px; 
 }
 
+.card button {
+    background-color: #8592de;
+    border-color: #fff;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
 .card button:hover {
-    background-color: #555;
+    background-color: #42579c;
 }
 
 footer {
-    background-color: #333;
+    background-color: #21397b;
+    background-color: ;
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 50% - 40px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
 }
